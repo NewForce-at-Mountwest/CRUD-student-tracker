@@ -1,0 +1,40 @@
+{
+  "students": [
+    {
+      "name": "Luke Miller",
+      "id": 1
+    },
+    {
+      "name": "Jessica Ayerst",
+      "id": 2
+    },
+    {
+      "name": "Levi Samples",
+      "id": 3
+    },
+    {
+      "name": "Melody Miller",
+      "id": 4
+    },
+    {
+      "name": "David Bias",
+      "id": 5
+    },
+    {
+      "name": "Daryl Adkins",
+      "id": 6
+    },
+    {
+      "name": "Jessica Ayerst",
+      "id": 7
+    },
+    {
+      "name": "Tommy Spurlock",
+      "id": 8
+    },
+    {
+      "name": "Seaver Stanley",
+      "id": 9
+    }
+  ]
+}
