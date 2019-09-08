@@ -53,3 +53,27 @@ document.querySelector("body").addEventListener("click", () => {
     });
   }
 });
+
+// ----------- CLICK EVENTS FOR EDIT BUTTON -------------// 
+document.querySelector("body").addEventListener("click", () => {
+  if(event.target.id.includes("edit-student")){
+    apiManager.getOneStudent(event.target.id.split("-")[2])
+    .then(singleStudentToEdit => {
+      domPrinter.printEditForm(singleStudentToEdit)
+    })
+  }
+})
+
+// Edit submit button
+document.querySelector("body").addEventListener("click", () => {
+  if(event.target.id.includes("submit-edit")){
+    const editedStudentObject = {
+      name: document.querySelector(`#edit-input-${event.target.id.split("-")[2]}`).value
+    }
+    apiManager.editOneStudent(editedStudentObject, event.target.id.split("-")[2])
+    .then(apiManager.getAllStudents)
+    .then(students => {
+      domPrinter.printStudentsToDOM(students)
+    })
+  }
+})

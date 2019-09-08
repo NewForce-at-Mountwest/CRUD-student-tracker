@@ -8,11 +8,18 @@ const domPrinter = {
       // For each student, print a p tag with their name to the DOM
       document.querySelector(
         "#student-output-container"
-      ).innerHTML += `<div class="student-card">
+      ).innerHTML += `<div class="student-card" id="student-card-${singleStudent.id}">
         <p>${singleStudent.name}</p>
         <button id="delete-student-${singleStudent.id}">Delete</button>
+        <button id="edit-student-${singleStudent.id}">Edit</button>
       </div>`;
     });
+  },
+  printEditForm: studentObject => {
+    document.querySelector(`#student-card-${studentObject.id}`).innerHTML = `<div>
+      <input type="text" id="edit-input-${studentObject.id}" value="${studentObject.name}">
+      <button id="submit-edit-${studentObject.id}">Save</button>
+    </div>`
   }
 };
 
