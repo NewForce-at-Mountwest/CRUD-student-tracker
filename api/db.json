@@ -2,27 +2,60 @@
   "students": [
     {
       "name": "Daryl A.",
+      "userId": "1",
       "id": 6
     },
     {
       "name": "Jessica A",
-      "id": 7
+      "id": 7,
+      "userId": 1
     },
     {
       "name": "Tommy Spurlock",
-      "id": 8
+      "id": 8,
+      "userId": 1
     },
     {
       "name": "Jennifer Johnson",
-      "id": 10
+      "id": 10,
+      "userId": 1
     },
     {
       "name": "Lance Pennington",
-      "id": 11
+      "id": 11,
+      "userId": 1
     },
     {
       "name": "Jacob Perry",
-      "id": 13
+      "id": 13,
+      "userId": 1
+    },
+    {
+      "name": "Leah Gwin",
+      "userId": "2",
+      "id": 14
+    },
+    {
+      "name": "Seaver Stanley!!!!",
+      "userId": "1",
+      "id": 15
+    },
+    {
+      "name": "Will Lewis!",
+      "userId": "2",
+      "id": 16
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "NewForce",
+      "password": "abc123"
+    },
+    {
+      "id": 2,
+      "name": "NSS",
+      "password": "123abc"
     }
   ]
 }

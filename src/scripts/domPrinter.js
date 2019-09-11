@@ -24,6 +24,12 @@ const domPrinter = {
         <button id="save-edit-${studentObjectToEdit.id}">Save</button>
       </section>`
 
+  },
+  printStudentCreateForm: () => {
+    document.querySelector("#form-container").innerHTML = `
+    <input type="text" id="student-input" placeholder="Student Name">
+</section>
+<button id="save-student-button">Save Student</button>`
   }
 };
 
